@@ -224,7 +224,8 @@ UITextField * ofxiOSKeyboard::getKeyboardTextField() {
                     
                 case OF_ORIENTATION_DEFAULT:
                     _x = _xOriginal;
-                    _y = _h;
+                    /// following line as corrected from _y = _h to:
+                    _y = _yOriginal; 
                     break;
             }
         }
